@@ -5,6 +5,7 @@
 \usepackage[nolist,nohyperlinks]{acronym}
 % Maintain images and tables within their respective sections
 \usepackage[section]{placeins}
+\pagestyle{plain}
 
 % 
 % Change the margins
@@ -12,25 +13,26 @@
 % \usepackage[margin=2.9cm]{geometry}
 
 \begin{document}
-\title{Qual será o titulo}
+\title{Project Management and Maintenance on Information Systems Administration}
 
-\subtitle{Your Thesis subtitle}
-\author{your name, your email}
-\institute{your University}
+\subtitle{Diogo Pinto - nº69905}
+\author{Diogo.Reis.Pinto@tecnico.ulisboa.pt}
+\institute{Instituto Superior Técnico}
 
 \maketitle
 
-\input{sections/1-abstract.tex}
-\input{sections/2-keywords.tex}
-\input{sections/3-introduction.tex}
-\input{sections/4-objectives.tex}
-\input{sections/5-related-work.tex}
-\input{sections/6-architecture.tex}
-\input{sections/7-evaluation.tex}
-\input{sections/8-conclusions.tex}
+\input{sections/abstract.tex}
+\input{sections/keywords.tex}
+\input{sections/introduction.tex}
+\input{sections/objectives.tex}
+\input{sections/problem-contextualization.tex}
+\input{sections/related-work.tex}
+\input{sections/architecture.tex}
+\input{sections/evaluation.tex}
+\input{sections/conclusions.tex}
 \newpage
 \appendix
-\input{sections/9-appendix.tex}
+\input{sections/appendix.tex}
 
 
 
@@ -40,6 +42,6 @@
 \bibliographystyle{plain} 
 
 % replace example.bib with your .bib
-\bibliography{example.bib} 
+\bibliography{refs.bib} 
 
 \end{document}
