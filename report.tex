@@ -1,30 +1,54 @@
-\documentclass{./llncs2e/llncs}
+\documentclass[openany]{./llncs2e/llncs}
 \usepackage{graphicx}
 \usepackage{fixltx2e}
 \usepackage{mathtools}
 \usepackage{lmodern}
 \usepackage{textcomp}
+\usepackage[square,sort,comma,numbers]{natbib}
 \usepackage[nolist,nohyperlinks]{acronym}
 % Maintain images and tables within their respective sections
 \usepackage[section]{placeins}
 \pagestyle{plain}
 
-% 
-% Change the margins
-% 
-% \usepackage[margin=2.9cm]{geometry}
+\usepackage{geometry}
+\geometry{
+  a4paper,         % or letterpaper
+  textwidth=15cm,  % llncs has 12.2cm
+  textheight=24cm, % llncs has 19.3cm
+  heightrounded,   % integer number of lines
+  hratio=1:1,      % horizontally centered
+  vratio=2:3,      % not vertically centered
+}
+
+% make a proper TOC despite llncs
+\setcounter{tocdepth}{3}
+\makeatletter
+\renewcommand*\l@author[2]{}
+\renewcommand*\l@title[2]{}
+\makeatletter
+
+\setcounter{secnumdepth}{3}
+
+\renewcommand\bibsection{%
+   \section*{References}%
+   \markboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}%
+  }%
 
 \begin{document}
-\title{Project Management and Maintenance on Information Systems Administration}
 
+\title{Project Management and Maintenance on Information Systems Administration}
 \subtitle{Diogo Pinto - n\textordmasculine 69905}
 \author{Diogo.Reis.Pinto@tecnico.ulisboa.pt}
 \institute{Instituto Superior T\'{e}cnico}
 
 \maketitle
-
 \input{sections/abstract.tex}
 \input{sections/keywords.tex}
+\begingroup
+\let\cleardoublepage\relax
+\let\clearpage\relax
+{\def\large{} \def\normalsize{} \tableofcontents}
+\endgroup
 \input{sections/introduction.tex}
 \input{sections/objectives.tex}
 \input{sections/problem-contextualization.tex}

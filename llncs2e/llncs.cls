@@ -507,7 +507,7 @@ to0pt{\kern0.55\wd0\vrule height0.45\ht0\hss}\box0}}}}
 \setlength\arraycolsep{1.4\p@}
 \setlength\tabcolsep{1.4\p@}
 
-\def\tableofcontents{\chapter*{\contentsname\@mkboth{{\contentsname}}%
+\def\tableofcontents{\section*{\contentsname\@mkboth{{\contentsname}}%
                                                     {{\contentsname}}}
  \def\authcount##1{\setcounter{auco}{##1}\setcounter{@auth}{1}}
  \def\lastand{\ifnum\value{auco}=2\relax
