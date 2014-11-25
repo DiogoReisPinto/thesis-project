@@ -1,17 +1,11 @@
-thesis-project-bootstrap.istecni.co
+"Project Management and Maintenance on Information Systems Administration" Thesis Project
 ===================================
 
-A LaTeX project template for your awesome Thesis Project (using Springer theme, requested  by IST).
+A LaTeX project for my Thesis Project (using Springer theme, requested  by IST).
 
-I've been known as a "productivity freak" for some years know and when I started writing my thesis, it really annoyed me how the tools seemed old and broken, the process was old, there was no better practices around and all the documentation I found on the web wasn't cohesive. 
+To increase my productivity i decided to use some tools available to help writing my thesis project report. I came to the work done by David Dias https://github.com/diasdavid/thesis-project-bootstrap.istecni.co where we presented a set of tools to speedup this ward work of writing a thesis project.
 
-So, hoping that I could save someone else's time, I've been compiling this `bootstrap template`, sharing what worked as best for me. This template is dedicated to the first part of the thesis (project), I hope to have something for the full thesis when I do it :)
-
-Please if you have something to add, or a thing you like to share, open a issue or a pull request :)
-
-## Acknowlegments 
-
-Some of this best practices came from discussions I had with my friend [Bernardo Simões](https://github.com/golfadas), which is doing his Thesis at the same time as me, he shares the same desire of getting the clutter out of the way to maximize the focus on the content, and he likes GIFS.
+This repo is based on the work of David Dias and all the credits for discovering and presenting these tools are for him.
 
 ## Folder structure
 
@@ -19,9 +13,8 @@ Some of this best practices came from discussions I had with my friend [Bernardo
 .
 ├── LICENSE
 ├── README.md
-├── example.bib         # An example file of bibliography, you should replace with your own
+├── refs.bib         # bibliography file
 ├── img                 # Here we store all our images for the report
-│   └── rubberduck.jpg
 ├── llncs2e
 │   ├── aliascnt.sty
 │   ├── history.txt
@@ -39,7 +32,7 @@ Some of this best practices came from discussions I had with my friend [Bernardo
 │   └── sprmindx.sty
 ├── report.pdf          # The exported report as .pdf
 ├── report.tex          # The main file of the report
-├── sections            # You can find each individual section here (these are the requested)
+├── sections            # sections of the report
 │   ├── 1-abstract.tex
 │   ├── 2-keywords.tex
 │   ├── 3-introduction.tex
@@ -75,24 +68,10 @@ Here is how it works:
 
 ## Tips
 
-##### Start using
-
-Just click the `fork` button on the top right of this webpage and get started :) (you can always download as zip if you prefer).
-
 ##### How to Compile/Export to PDF
 
-You would expect that compiling would be something linear, however, LaTeX has it is own peculiatiries, specially when you have a bibliography. The process goes
 
-```bash
-$ pdflatex report # compile once
-$ bibtex report   # compile the references
-$ pdflatex report # compile again to attach the compiled references
-$ pdflatex report # compile again just to make the ref numbers appear accordingly
-```
-
-I know this seems odd, I myself didn't believe this was the way in the beginning and tried to find a more 'natural' way, however, after reading a bunch of stuff on the web and getting feedback from other people, yep, this is how it is done.
-
-I've added to this repo a script to do this automatically `toPDF.sh`, this script also has a "cleaning" function, to remove all the temporary files from your folder created by `pdflatex` compile step, so it you don't get your folder "full of things" :)
+A scriptis available to do this automatically `toPDF.sh`, this script also has a "cleaning" function, to remove all the temporary files from your folder created by `pdflatex` compile step, so it you don't get your folder "full of things" :)
 
 To execute it, just open your terminal and then
 
