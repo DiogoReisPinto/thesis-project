@@ -17,14 +17,9 @@ One important concept to define is the difference between IT Governance and IT m
 Considering the definition given by Van Grembergen \textit{et al.}, ``IT Management is focused on the internal effective supply of IT services and products and the management of present IT operations. IT Governance in turn is much broader, and concentrates on performing and transforming IT to meet present and future demands of the business (internal focus) and the business' customers (external focus).''.\par
  Considering the COBIT 5 view for this question, there is a ``clear distinction between governance and management, in the way these two disciplines encompass different types of activities, require different organizational structures and serve different purposes. Governance ensures that stakeholders' needs, conditions and options are evaluated to determine balanced, agreed-on enterprise objectives to be achieved. it sets direction through prioritisation and decision making and monitors performance and compliance against agreed-on direction and objectives.￼On the other hand, management plans, builds, runs and monitors activities in alignment with the direction set by the governance body to achieve the enterprise objectives.''\cite{2012cobit}\par
 
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{img/ITGovernanceAndManagement.png}
-\caption{IT Governance and IT Management}
-\end{figure}
 
 
- Considering both definitions and the figure 1, we can conclude that IT Governance has a bigger dimension that IT Management, but both need to be related and complementary to achieve success inside an organization. It is not possible for an organization to have well defined and matured management processes that are no related to governance aspects, but governance needs management to achieve goals and objectives settled to achieve success.
+ Considering both definitions, we can conclude that IT Governance has a bigger dimension that IT Management, but both need to be related and complementary to achieve success inside an organization. It is not possible for an organization to have well defined and matured management processes that are no related to governance aspects, but governance needs management to achieve goals and objectives settled to achieve success.
 
 \subsection{COBIT 5}
 
@@ -68,8 +63,28 @@ Figure 2 presents the COBIT 5 enablers previous defined and how they relate amon
 
 Considering figure 3, COBIT 5 process reference model considers two big domains of processes: Governance and Management. The governance domain contains five processes in the domain Evaluate, Direct and Monitor(EDM). The management domain has four internal domains of processes: Align, Plan and Organise(APO), Build, Acquire and Implement(BAI), Deliver, Service and Support (DSS) and Monitor, Evaluate and Assess(MEA).\par
 All processes for management and governance are presented in the appendix and all the implementation details explained in COBIT 5: Enabling Processes, A detailed reference guide to the processes defined in the COBIT 5 process reference model. This includes the COBIT 5 goals cascade, a process model explanation, governance and management practices, and the process reference model\cite{2012cobitEP}.\par
-COBIT 5 includes a process capability model based on ISO/IEC 15504 Software Engineering - Process Assessment standard.\cite{ISO15504} This model allow to measure the current level of maturity of enterprise processes, presenting the gap between the current level and the desired one the enterprise wants to achieve. This new capability model is an improvement of the previous on COBIT 4.1 \cite{cobit4}, being more simplified and compliant with a generally accepted process assessment standard.\par
 Relating to other frameworks and standards, COBIT tries to establish a framework that is compliant with the most widely accepted standards in IT governance and management. In figure 4 we can see the standards COBIT 5 relates by processes domain, with special attention to ITIL V3\cite{itilSS,itilSD,itilSO,itilST,itilCSI}, ISO/IEC 20000\cite{ISO20000-1}, PMBOK\cite{pmbok5} and CMMI\cite{cmmi}, that are closely related to this project's problem. This compliance with other standards is fundamental for a widely adoption of COBIT 5, in the way it tries to establish goals, metrics, practices, roles, inputs and outputs for each process, making it necessary being compliant with international standards. This will improve COBIT application and acceptance on organizations.\par
+
+
+\subsubsection{CMMI and its importance for COBT 5}
+
+CMMI (Capability Maturity Model Integration), first developed at the Software Engineering Institute at Carnegie Mellon University and currently operated by the CMMI Institute, consists on a set of practices and process improvement goals that organizations can use to evaluate and improve its processes. 
+CMMI, currently on version 1.3, defines process areas considering business objectives. The three areas of interest for CMMI are:
+
+\begin{itemize}
+
+\item CMMI for Acquisition (CMMI-ACQ) - Provides guidance to organizations that manage the supply chain to acquire and integrate products and services to meet the needs of the customer.
+
+\item CMMI for Development (CMMI-DEV) - Provides guidance to improve the effectiveness, efficiency, and quality of their product development work. Used for process improvement in organizations that develop products.
+
+\item CMMI for Services (CMMI-SVC) - Provides guidance to organizations that establish, manage, and deliver services that meet the needs of customers and end users.
+
+\end{itemize}
+
+\subsubsection{COBIT 5 process capability model}
+
+COBIT 5 includes a process capability model based on ISO/IEC 15504 Software Engineering - Process Assessment standard.\cite{ISO15504} This model allow to measure the current level of maturity of enterprise processes, presenting the gap between the current level and the desired one the enterprise wants to achieve. This new capability model is an improvement of the previous on COBIT 4.1 \cite{cobit4}, being more simplified and compliant with a generally accepted process assessment standard.\par
+
 
 \subsubsection{COBIT 5 critical analysis}
 
@@ -266,9 +281,25 @@ ISO/IEC 20000 corresponds to a standard on IT Service Management. Initially was 
   
 \end{itemize}
 
-\subsection{ISO/IEC 27000} - We need to define if it is really in the scope of this project
+\subsection{ISO/IEC 27000}
 
-\subsection{CMMI} - We need to define if it is really in the scope of this project
+ISO/IEC 27000 is family of international standards related to Information Security management systems (ISMS). This set of standards intent to help organizations of any size to implement and operate an ISMS. As stated by ISO, this family of standards contain information on:
+
+\begin{itemize}
+
+\item Requirements definition for an ISMS and for certification of those systems.
+\item Support and guidance for the overall process to establish, implement, maintain and improve and ISMS.
+\item Conformity assessment for ISMS.
+\item Terms and definitions related to Information security management.
+
+\end{itemize}
+
+This family of standards is commonly used by organizations to implement frameworks for managing information security, protecting important assets as financial data or customers details. Information security is one of the main concerns on any organization, because information leaks or losses can have severe consequences for the overall organization.\par
+International standards as ISO 31000 and ISO 19011 are also related to this family of standards, making risk management and auditing management systems, respectively, areas that have direct impact on information security management systems. Dealing with information security is impossible without considering risk. The overall ISMS need to take account processes for risk identification, treatment and assessment for establishing a secure management system. Furthermore, and also related to risk, ISMS need to consider auditing management as a way to ensure information security and its correct management.\par
+
+This standard will be important for our project considering we deal with processes that consume and produce information, and all information is an important asset for any organization implement this processes, making this standard fundamental to establish an information security management system to protect all the information we deal with.\par
+
+
 
 \subsection{ISO 31000}
 
