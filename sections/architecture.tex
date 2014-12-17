@@ -4,10 +4,84 @@
 % Architecture
 % 
 
-\section{Solution's Architecture}
+\section{Solution's Architecture Proposal}
 
-\subsection{Stakeholders}
+Considering this project problem and the objectives presented in problem contextualization section, We want to develop a process framework for project and maintenance management to be applied to an Information Systems administration. We provided, in Related Work section, a state of the art ins several frameworks for IT governance and management, as well as international standards, building a knowledge base to start panning and designing the processes.\par
+Taking in account the complexity of some frameworks presented, like COBIT, and also the problem's scope and the solution time-frame, we need to conduct an analysis of the knowledge we will use from each framework or standard. We will use ISO/IEC 12207, presented in section 5.1, to define which types of processes we will consider for this project, defining next the frameworks and standards we will consider as reference for each type of processes. As long as processes need supporting artifacts and a responsibility structure, this references also support this needs, presenting some suggestions of how responsibilities are addressed for each process and what artifacts are needed for a correct process implementation.\par
+Since we are also looking for a logical application architecture, we will provide a deeper analysis on the solutions present in section 6, narrowing down the available solutions to provide the features more important for this project, in order to reach to an logical application architecture that is able to fully support our process framework.\par
+As long as this project is aligned with a real-case scenario for an organization, we will take design decisions considering the stakeholders for this project, specially when dealing with the choice of the type of processes to consider and the solutions choosing for integrating the logical application architecture. This organization will also provide us ways to demonstrate our solution's suitability, allowing us to achieve the demonstration and evaluation step of the DSRM process applied for this project\par
 
-\subsection{Processes}
+
+
+\subsection{Process Framework}
+
+To start designing our processes, we need first to define what processes we will consider to be in the scope of this project. For this, and taking as reference ISO/IEC 12207, detailed in section 5.1, that standardizes the processes for the whole life cycle of software, we will present the areas we will address and the reasons why we do not do it for the others.\par
+The two main areas to consider are governance and management processes. Considering the extensibility and complexity of both, we could not focus on the two giving the time-frame available. Being so, we decided, accordingly with the stakeholders, to not detail governance processes. Areas focused on organization strategy or project portfolio will not be addressed for this project. Instead, we will consider that this subjects are already clearly defined by the organization, being our responsibility designing processes that are are to comply with them. 
+Despite this, there are governance processes that will have direct influence on the subjects covered by this thesis, namely risk, budget and quality management. These subjects will be addressed by this project considering a more operational approach. We will consider that organization strategy for this areas are already defined, being our mission design processes that implement and ensure this strategy in practice.\par
+In figure 32 we can observe the areas of interest for this project highlighted from the ISO/IEC 12207 international standard reference for software life cycle processes. groups of processes directly related to governance are not considered for this project, as the Agreement processes and Organizational Project-Enabling processes.\par
+Technical Processes and Software Implementation processes are also not considered in the scope, because we will assume that projects implementation is outsourced, being the responsibility of a third-party. In light of this, processes presented in Technical and Software Implementation processes groups are not relevant for the organization, although  they are fundamental for the third-party that will implement the project. Despite this assumption, the organization itself has a complete process for project management, that is different from the third-party project. Aspects like project calendar, deliveries and control are done by the two entities by different perspectives, being us responsible for the organization project management.\par
+For this thesis, we will consider the Project processes and the Software Support processes, both directly related to project and maintenance management. In addition to the processes in Project processes group, we will also consider Capacity Management, Issues Management,Financial Management and Document Management as processes belonging to this group.\par
+Regarding Software Support Processes, we will consider Software Documentation Management, Software Configuration Management and Software Validation and audit processes.\par
+Software Reuse Processes group will not be considered for this project because are not considered as a theme of interest for it, being also not related with the objectives we purpose. In next section we will present how we will address each one of the processes, considering the available state of the art.\par
+
+\subsubsection{Processes Mapping to frameworks}
+
+In this section we will present how each one of the processes in the scope for this project are addressed and mapped into the frameworks and standards presented in section 4. This will provide us an initial guidance on how we should approach the problem, based on already stated knowledge by professional in the area. Our objective is to use only the important aspects for this project, reducing the complexity of implementing a complete framework for the organization. Consider this, we need to map the processes in the scope for this project to, during processes design, discover what objectives are already covered by the frameworks and which ones need more original work.\par
+In table 2 we present the mapping between each process in the scope for this project with the framework or standard that covers some aspects for it.\par
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{4}{c|}{\textbf{COBIT 5 Domains}} & \multicolumn{5}{c|}{\textbf{ITIL V3 Volumes}} &  &  &  &  \\ \cline{2-10}
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\textbf{Processes}}} & \textbf{APO} & \textbf{BAI} & \textbf{DSS} & \textbf{MEA} & \textbf{SS} & \textbf{SD} & \textbf{SO} & \textbf{ST} & \textbf{CSI} & \multirow{-2}{*}{\textbf{PMBOK}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}ISO/IEC\\ 20000\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}ISO/IEC \\ 27000\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}ISO\\ 31000\end{tabular}}} \\ \hline
+\textbf{Project Planning} & \cellcolor[HTML]{5A9D58}\checkmark & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  &  &  &  &  & \cellcolor[HTML]{FD6864}\checkmark & \cellcolor[HTML]{329A9D}\checkmark &  &  \\ \hline
+\textbf{Project Assessment and Control} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} &  &  &  &  &  & \cellcolor[HTML]{FD6864}\checkmark & \cellcolor[HTML]{329A9D}\checkmark &  &  \\ \hline
+\textbf{Decision Management} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} & \cellcolor[HTML]{5A9D58}{\color[HTML]{000000} \checkmark} & \cellcolor[HTML]{FFCC67}\checkmark &  &  &  &  & \cellcolor[HTML]{FD6864}\checkmark & \cellcolor[HTML]{329A9D}\checkmark &  &  \\ \hline
+\textbf{Risk Management} & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  &  & \cellcolor[HTML]{FFCC67}\checkmark &  &  &  & \cellcolor[HTML]{FD6864}\checkmark &  & \cellcolor[HTML]{329A9D}\checkmark & \cellcolor[HTML]{329A9D}\checkmark \\ \hline
+\textbf{Capacity Management} & \cellcolor[HTML]{5A9D58}\checkmark & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  & \cellcolor[HTML]{FFCC67}\checkmark &  &  &  &  &  &  &  \\ \hline
+\textbf{Issues Management} &  &  & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  & \cellcolor[HTML]{FFCC67}\checkmark &  &  &  &  &  &  \\ \hline
+\textbf{Financial Management} & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  & \cellcolor[HTML]{FFCC67}\checkmark &  &  &  &  &  &  &  &  \\ \hline
+\textbf{Documentation Management} & \cellcolor[HTML]{5A9D58}\checkmark & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  &  &  &  &  & \cellcolor[HTML]{FD6864}\checkmark &  & \cellcolor[HTML]{329A9D}\checkmark &  \\ \hline
+\textbf{Software Configuration Management} &  & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  &  &  & \cellcolor[HTML]{FFCC67}\checkmark &  &  &  &  &  \\ \hline
+\textbf{Software Validation} & \cellcolor[HTML]{5A9D58}\checkmark &  &  &  &  &  &  & \cellcolor[HTML]{FFCC67}\checkmark &  & \cellcolor[HTML]{FD6864}\checkmark &  &  &  \\ \hline
+\end{tabular}
+}
+\caption{My caption}
+\label{my-label}
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|}
+\hline
+\textbf{Processes} & \multicolumn{1}{c|}{\textbf{Description}} \\ \hline
+\textbf{Project Planning} & \begin{tabular}[c]{@{}l@{}}Scope and goals definition;\\ Requirements establishment;\\ Activities and deliverables identification;\\ Schedule definition;\\ Resources identification;\\ Responsibilities assignment;\\ Quality, Risk and Cost Analysis;\end{tabular} \\ \hline
+\textbf{Project Assessment and Control} & \begin{tabular}[c]{@{}l@{}}Project monitoring;\\ Project control;\\ Project assessment;\end{tabular} \\ \hline
+\textbf{Decision Management} & \begin{tabular}[c]{@{}l@{}}Decision-Making strategy definition;\\ Alternative Courses of action definition;\\ Course of action identification;\\ Decision analysis;\\ Decision tracking;\end{tabular} \\ \hline
+\textbf{Risk Management} & \begin{tabular}[c]{@{}l@{}}Risk Management planning;\\ Risk Profile Management;\\ Risk Analysis;\\ Risk Treatment;\\ Risk Monitoring;\\ Risk Management process evaluation;\end{tabular} \\ \hline
+\textbf{Capacity Management} & \begin{tabular}[c]{@{}l@{}}Capacity Plan definition;\\ Performance Monitoring;\\ Performance Analysis;\\ Performance tuning;\end{tabular} \\ \hline
+\textbf{Issues Management} & \begin{tabular}[c]{@{}l@{}}Issue Identification;\\ Issue Prioritization;\\ Issue Resolution;\\ Issue Communication;\end{tabular} \\ \hline
+\textbf{Financial Management} & \begin{tabular}[c]{@{}l@{}}Budgeting definition;\\ IT Accounting planning;\\ Charging planning;\\ Financial control;\\ Financial communication;\end{tabular} \\ \hline
+\textbf{Documentation Management} & \begin{tabular}[c]{@{}l@{}}Documentation definition;\\ Documentation production;\\ Documentation validation;\\ Documentation communication;\\ Documentation tracking;\end{tabular} \\ \hline
+\textbf{Software Configuration Management} & \begin{tabular}[c]{@{}l@{}}Software configuration management plan developing;\\ Configuration Identification;\\ Configuration Control;\\ Configuration Status Accounting;\\ Configuration Evaluation;\end{tabular} \\ \hline
+\textbf{Software Validation} & \begin{tabular}[c]{@{}l@{}}Validation plan definition;\\ Test requirements, test cases and test specifications preparation;\\ Tests Execution;\\ Software validation against the requirements execution;\end{tabular} \\ \hline
+\end{tabular}
+}
+\caption{My caption}
+\label{my-label}
+\end{table}
+
+\subsection{Logical Application Architecture}
 
 
