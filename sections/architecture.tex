@@ -109,10 +109,85 @@ For designing this responsibility structure we will consider the work already do
 
 \subsection{Logical Application Architecture}
 
+A proposal for a logical application architecture is one of the objectives of this project, being important to support the processes framework. To achieve this, we evaluated a set of PPM and ITSM Solutions available in the market with the objective to come with a proposal of applications that can be a part of this architecture.\par
+For evaluation purposes, we used Gartner and Forrester research, presented in section 6, that allow us to independently evaluate how these tools stand a position in the PPM and ITSM Market and also what is the solution more complete int terms of features and capacities.\par
+In this section we will present the solutions we consider the best for our objectives, being part of a proposal for the project's stakeholders. After deciding what solution we will consider for this project, we need to design a logical application architecture, where we will present how the processes are supported by our applications and how it is integrated.\par
+
 \subsubsection{PPM Tools}
+
+For PPM solutions, that we evaluate in section 6.3, we used the Magic Quadrant , the MarketScope and the Forrester Wave methodologies for evaluation.\par
+In Magic Quadrant results, that presents how well solutions' providers conform with market needs, we will just consider the leaders quadrant, composed by Planview, Compuware, CA, HP, Oracle and Microsoft. Planview and CA are the suppliers with the best results but are closely followed by the rest. A deeper analysis on strengths and cautions presented by Gartner for each one of this solutions is presented in Appendix section XXX.\par
+In MarketScope results, that presents how well solutions deal on emerging markets with changing requirements, we will only consider the solutions with strong positive and positive ratings. This method is particular important in this area of tools, because PPM solutions are facing market changes, looking more for Cloud based solutions in the future. As well as on magic Quadrant, Planview and CA Techncologies present the best results with strong positive ratings. The other solutions we are considering obtained positive rating.\par
+For the Forrester Wave results, that evaluates providers by criteria and respective weightings, we will consider the two models explained in section 6.3, the above-the-line and below-the-line. For the first one, the leaders quadrant is composed by Planview, CA Technologies, HP and Daptiv. All presents good results but is CA Technologies who is the most complete provider, in terms of current offering, strategy and market presence. Other providers present better results in some of this criteria but are substantially worse in others. For the below-the-line evaluation, we have CA Technologies and Planview with results very close and HP with an excellent result in strategy criteria. Microsoft, Rally and Daptiv are also part of the leaders, but with results slightly worse.\par
+In table 3 we can observe the PPM Tools Evaluation results. In green we have the solutions we consider the best for this project taking in account the evaluation results. We also present the alternatives in orange. CA Technologies with CA Clarity PPM and Planview with Planview Enterprise are the solutions we will purpose for the PPM Tool to consider for this project.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|l|c|c|c|l|}
+\hline
+ & \multicolumn{2}{c|}{} &  & \multicolumn{3}{c|}{\textbf{Forrester Wave}} \\ \cline{5-7} 
+\multirow{-2}{*}{\textbf{Solutions Providers}} & \multicolumn{2}{c|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Gartner\\ Magic\\ Quadrant\end{tabular}}}} & \multirow{-2}{*}{\textbf{Marketscope}} & \multicolumn{1}{l|}{\textbf{Above-The-Line}} & \multicolumn{2}{l|}{\textbf{Below-The-Line}} \\ \hline
+\rowcolor[HTML]{5A9D58} 
+\textbf{CA Technologies} & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} & Strong Positive & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} \\ \hline
+\rowcolor[HTML]{5A9D58} 
+\textbf{Planview} & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} & Strong Positive & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} \\ \hline
+\rowcolor[HTML]{FFCB2F} 
+\textbf{HP} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} & Positive & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} \\ \hline
+\rowcolor[HTML]{FFCB2F} 
+\textbf{Microsoft} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} & Positive & Strong Performer & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} \\ \hline
+\textbf{Oracle} & \multicolumn{2}{c|}{Leader} & Positive & - & \multicolumn{2}{c|}{-} \\ \hline
+\textbf{Compuware} & \multicolumn{2}{c|}{Leader} & Positive & - & \multicolumn{2}{c|}{-} \\ \hline
+\textbf{Rally} & \multicolumn{2}{c|}{-} & - & Strong Performer & \multicolumn{2}{c|}{Leader} \\ \hline
+\textbf{Daptiv} & \multicolumn{2}{c|}{-} & - & Leader & \multicolumn{2}{c|}{Leader} \\ \hline
+\end{tabular}
+}
+\caption{PPM Tools evaluation results.}
+\label{my-label}
+\end{table}
 
 \subsubsection{ITSM Tools}
 
+For ITSM solutions, that we evaluate in section 6.4, we used the Magic Quadrant , the Critical Capabilities and the Forrester Wave methodologies for evaluation.\par
+In Magic Quadrant results, that presents how well solutions' providers conform with market needs, we will just consider the leaders and challengers quadrants, composed by ServiceNow and BMC Software for the leaders and Cherwell and CA Technologies for challengers. ServiceNow is the best provider in terms of ability to execute with some advantage to concurrency but really close of BMC Software in terms of completeness of vision. Cherwell Software and CA Technologies present a considering lower result for completeness of vision considering the leaders quadrant. A deeper analysis on strengths and cautions presented by Gartner for each one of this solutions is presented in Appendix section XXX.\par
+In Critical Capabilities results, we will only consider the High-Maturity, Digital Workplace and Total ITSM Use Cases. We will also only consider the solutions provided by the suppliers in the leaders and challengers quadrants presented by Gartner. In all the use cases considered, BMC Remedy ITSM Suite and ServiceNow IT Service Automation suite have the higher scores, being followed by some distance by CA Service Management and Cherwell Software Service Management.\par
+For the Forrester Wave results, we have Cherwell Software and Service Now as the leaders, very close to each other and with a very good result in terms of market presence. BMC Software and CA Technologies are considered Strong Performers, but at some distance of the other two. Forrester establishes big differences between the two leaders providers and the two strong contenders in terms of the three criteria considered.\par
+In table 4 we can observe the ITSM Tools Evaluation results. In green we have the solution we consider the best for this project taking in account the evaluation results. ServiceNow with ServiceNow IT Service Automation is the solution we will purpose for the ITSM Tool to consider for this project. We also present other alternatives in orange. It should be taken special attention to CA Technologies tool as alternative solution if we consider the CA Technologies PPM tool due to easier integration between the PPM and ITSM tool.
+
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ &  & \multicolumn{3}{c|}{\textbf{Gartner Critical Capabilities}} &  \\ \cline{3-5}
+\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Solutions\\ Providers\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Gartner\\ Magic \\ Quadrant\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}c@{}}High\\ Maturity\\ UC\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Digital \\ Workplace \\ UC\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Total\\  ITSM\\ Use Case\end{tabular}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Forrester \\ Wave\end{tabular}}} \\ \hline
+\rowcolor[HTML]{5A9D58} 
+\textbf{ServiceNow} & Leaders & 3,68 & 3,49 & 3,56 & Leader \\ \hline
+\rowcolor[HTML]{FFCC67} 
+\textbf{Cherwell Software} & Challengers & 3,15 & 3,12 & 3,22 & Leader \\ \hline
+\rowcolor[HTML]{FFCC67} 
+\textbf{BMC Software} & Leaders & 3,74 & 3,49 & 3,52 & Strong Performers \\ \hline
+\rowcolor[HTML]{FFCC67} 
+\textbf{CA Technologies} & Challengers & 3,39 & 3,31 & 3,22 & Strong Performers \\ \hline
+\end{tabular}
+}
+\caption{ITSM Tools evaluation results.}
+\label{my-label}
+\end{table}
+
 \subsection{Demonstration Proposal}
+
+For demonstrating our solution we will apply our process framework and logical application architecture to a real-case organization, from the utilities sector of business (Energy). This organization is composed by a unique administration for applications (software) area. This administration will receive two types of requests: project execution and evolving maintenance requests. All the assumptions were made available from the stakeholder for this project, using an interview approach.\par
+Considering the stakeholders for this demonstration project, we have two types: Internal and External. Considering internal stakeholders, we have the Business area, composed by the organization administration (sponsor), the financial department and logistic department and the Technology area, composed by the Information Systems department (Project execution and Maintenance project managers and leaders). Considering the external stakeholders, we have the Third-parties responsible for project implementation, Suppliers, Consumers and regulatory entities.\par
+Project Execution department will outsource project implementation to a third-party but internally will maintain processes for project management, independent from the third-party. it corresponds to the project internal administration considering the third-party activities. Evolving maintenance requests are filtered by a Help-Desk service, Wherefore only the Major Changes requests arrive to the evolving maintenance department.\par
+A project only enters in production phase after approval from the maintenance department. When in production phase, project belongs to the maintenance department. Maintenance department can, accordingly with a strategical plan defined, outsource the maintenance implementation, being only responsible for its management.\par
+This demonstration proposal is a specialization application of our process framework but was considered during its planning, reason why some processes were not considered to make part of the framework, because they would introduce too much complexity considering the application purposes.\par
+
 
 
