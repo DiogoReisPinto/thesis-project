@@ -38,7 +38,7 @@ It also defines seven enablers, explained by COBIT as factors that, individually
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{img/Enablers.png}
+\includegraphics[width=0.6\textwidth]{img/Enablers.png}
 \caption{COBIT 5 enablers. Extracted from \cite{2012cobit}.}
 \end{figure}
 
@@ -46,7 +46,7 @@ It also defines seven enablers, explained by COBIT as factors that, individually
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{img/COBITProcesses.jpg}
+\includegraphics[width=0.8\textwidth]{img/COBITProcesses.jpg}
 \caption{COBIT 5 domains. Extracted from \cite{2012cobit}.}
 \end{figure}
 
@@ -303,7 +303,7 @@ In Figure 7, we can observe the purposed framework by ISO 31000:2009, used to im
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\textwidth]{img/ISO31000Framework.png}
+\includegraphics[width=0.7\textwidth]{img/ISO31000Framework.png}
 \caption{ISO 31000:2009 framework for Risk Management. Extracted from \cite{ISO31000}.}
 \end{figure}
 
@@ -326,18 +326,17 @@ In Appendix C it is presented the process flow for the management of an audit pr
 
 \section{A State of the Art in Market Solutions}
 
-Considering we are interested in developing a logical application architecture, we need to analyze solutions available on the market to compose this architecture. This solutions should be evaluated accordingly with its importance and benefit for project's purposes\par
-Considering this two areas of interest for this project, we will perform an analysis of the solutions available on the market for Project and Portfolio Management Tools (PPM Tools) and for IT Service Support Tools (ITSM Tools). There are hundreds of solutions available for both tools, so we need to find mechanisms for narrowing and evaluating some of the solutions fairly and taking in account its functionalities and benefits for this project. Thus, we will use researches performed in this areas by Gartner and Forrester, two companies focused on IT research and advisory. Both companies provide techniques to evaluate PPM and ITSM tools, providing us the necessary information to evaluate the market offers and perform a usage proposal based on this results.\par
+Considering we are interested in developing a logical application architecture, we need to analyze solutions available on the market to compose this architecture. This solutions should be evaluated accordingly with its importance and benefit for project's purposes.\par
+Considering this two areas of interest for this project, we will perform an analysis of the solutions available on the market for Project and Portfolio Management (PPM) and for IT Service Support Management (ITSM) tools. There are hundreds of solutions available for both tools, so we need to find mechanisms for narrowing and evaluating some of them fairly and taking in account its functionalities and benefits for this project. Thus, we will use researches performed in this areas by Gartner and Forrester, two companies focused on IT research and advisory. Both companies provide techniques to evaluate PPM and ITSM tools, providing us the necessary information to evaluate the market offers and perform a usage proposal based on this results.\par
 
-\subsection{Gartner Research}
+\subsection{Research Methodologies}
 
-Gartner inc. is an information technology research and advisory company that delivers to its clients technology-related insight for helping on business decisions. As stated by Gartner \cite{GartnerAbout}, \textit{``From CIOs and senior IT leaders in corporations and government agencies, to business leaders in high-tech and telecom enterprises and professional services firms, to technology investors, we are the valuable partner to clients in over 9,100 distinct enterprises worldwide.''}.\par
-Gartner provides a set of methodologies to help clients on its IT investments, reducing and managing risks as well as helping to achieve sucess through research processes that are based in years of experience and maturation. Gartner objective is to provide methodologies that ensure business decisions by clients are made with high levels of confidence.\par
-Considering this project objectives, we will use the following methodologies from Gartner:
+In this section we present the research methodologies from Gartner and Forrester that we will use to assess PPM and ITSM solutions. These methodologies were chosen considering we want to evaluate both solutions and providers, namely their performance on PPM and ITSM markets and their supported functionalities.\par
+From Gartner Research we will use the Gartner Magic Quadrant and Gartner Capabilities methodologies. From Forrester Research, we will use the Forrester Wave methodology.\par
 
 \subsubsection{Gartner Magic Quadrant}
 
-The objective of the Gartner Magic Quadrant\cite{GartnerMagicQuadrant} is to provide a wide-angle view of the relative positions of a specific market's competitors. It helps on analyzing how well technology providers are executing against their stated vision, presenting a graphical competitive positioning (see Figure 9) of four types of technology providers, in growing markets with providers differentiation. The four types of technology providers are:
+As stated in \cite{GartnerMagicQuadrant}, the objective of the Gartner Magic Quadrant is to \textit{``provide a wide-angle view of the relative positions of a specific market's competitors.''}. It is used to analyze how each solution's provider performs on the market, considering its view for it. This methodology is based on a graphical representation (see figure 9) of how each provider is positioned considering four types of technology's providers. Gartner defines those providers in \cite{GartnerMagicQuadrant} as:
 
 \begin{itemize}
 \item \textbf{Leaders} - Execute well against their current vision and are well positioned for tomorrow.
@@ -346,44 +345,34 @@ The objective of the Gartner Magic Quadrant\cite{GartnerMagicQuadrant} is to pro
 \item \textbf{Challengers} - Execute well today or may dominate a large segment, but do not demonstrate an understanding of market direction.
 \end{itemize}
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{img/GartnerMagicQuadrant.png}
 \caption{Gartner Magic Quadrant representation. Extracted from \cite{GartnerMagicQuadrant}.}
 \end{figure}
 
-This methodology is fundamental to analyze technology providers we can consider for adoption, but we need to take in account on how each provider aligns with the business goals of the organization. Focusing on the leaders' quadrant is not always the best option and we need to know what specific objectives we want to achieve to select the best provider for fulfilling our requirements. 
+This methodology is fundamental to analyze technology's providers we can consider for adoption, but we need to take in account on how each provider aligns with the business goals of the organization. Focusing on the Leaders' quadrant is not always the best option and we need to know what specific objectives we want to achieve to select the best provider for fulfilling our requirements. 
 
-
-\subsubsection{Gartner MarketScope}
-
-Gartner MarketScope methodology\cite{GartnerMarketScope} is used for analyzing solutions for emerging markets with changing requirements. Gartner Magic Quadrant is not suitable for this type of markets as far as a competitive positioning is not useful and accurate for an growing and changing market. Thus, MarketScope intents to understand how the status of an emerging market aligns with clients state of maturity and future plans. It helps evaluating participating technology providers against the Gartner vision for that market. MarketScopes rate each market's participating technology providers as Strong Positive, Positive, Promising, Caution or Strong Negative.\par
 
 \subsubsection{Gartner Critical Capabilities}
 
-This methodology\cite{GartnerCriticalCapabilities} will complement Gartner Magic Quadrant, providing deeper insight into providers' solutions, presenting its offerings based on service and product key capabilities ratings. As stated by Gartner\cite{GartnerCriticalCapabilities}, \textit{``a Critical Capabilities document is a comparative analysis that scores competing products or services against a set of critical differentiators identified by Gartner. It shows you which products or services are a best fit in various use cases to provide you actionable advice on which products/services you should add to your vendor shortlists for further evaluation.''}.\par
-This methodology offers better benefits when applied in line with the Magic Quadrant methodology, providing deeper insight on products and services offerings from providers that Magic Quadrant positioned on the market. When available, we will consider these two methodologies together for evaluating PPM and ITSM solutions.\par
+As stated by Gartner\cite{GartnerCriticalCapabilities}, \textit{``a Critical Capabilities document is a comparative analysis that scores competing products or services against a set of critical differentiators identified by Gartner. It shows you which products or services are a best fit in various use cases to provide you actionable advice on which products/services you should add to your vendor shortlists for further evaluation.''}.\par
+This methodology offers better benefits when applied in line with the Magic Quadrant methodology, providing deeper insight on providers' offering that Magic Quadrant evaluates. When available, we will consider these two methodologies together for evaluating PPM and ITSM solutions.\par
 
-\subsection{Forrester Research} 
-
-Forrester is a research and advisory company providing guidance to professionals in 13 key roles across the business technology, marketing and strategy segments.\cite{ForresterAbout} It presents to its clients research-based services, centering its corporate mission on providing client's adaptable and centered solutions to his needs. As stated by Forrester Role Manifesto, its core values, called 3CIQ, are the Clients, Collaboration, Courage, Integrity and Quality.\par
-Considering our objectives for this project, we will consider the Forrester Wave Methodology to analyze the PPM and ITSM solutions available on the market.
 
 \subsubsection{Forrester Wave Methodology}
 
-This methodology\cite{ForresterWave} is provided by Forrester to evaluate providers in software, hardware or service market, presenting the criteria and the weights for this evaluation. This methodology is transparent for the client, being only based in criteria weighting performed by Forrester research professionals. In addition, all the methodology process and participants are presented, making clear how the evaluation was conducted.\par
-Each Forrester Wave counts with the participation of four key elements: An analyst, a research associate, a vendor response team and costumer references. Before starting the analysis, the analyst performs a preparation process, researching the evaluation category, identifying the category and the scope, selecting and evaluation methods and creating the research plan and timeline.\par
-Consider the evaluation process, it is composed by five milestones: Create evaluation criteria, determine vendors for inclusion, gather evaluation data, create the vendor comparison and publish the report. This milestones ensure a well defined and independent process.\par
-We will present, for the PPM an ITSM tools, the corresponding Forrester Wave reports, complementing the Gartner evaluation by making our research for this tools more valuable and rich.\par 
+This methodology\cite{ForresterWave} is provided by Forrester to evaluate providers in Software, Hardware or Service markets, presenting the criteria and the weights for this evaluation. This methodology is transparent for the client, being only based in criteria's weighting performed by Forrester's research professionals. In addition, all the methodology's process and participants are presented, making clear how the evaluation was conducted.\par
+We will present, for the PPM an ITSM tools, the corresponding Forrester Wave reports, complementing the Gartner's evaluation and making our analysis for this tools more valuable and rich.\par 
 
 \subsection{Project and Portfolio Management Tools analysis}
 
-To perform our analysis on available market solutions for Project and Portfolio Management tools we will use the Gartner Magic Quadrant for IT Project and Portfolio Management from June 2010 \cite{magicQuadrantPPM}, the last published Magic Quadrant for this type of tools. For completing our analysis, we will also present the Gartner MarketScope for IT Project and Portfolio Management Software Applications \cite{MarketScopePPM} and the Forrester Wave Project/Program Portfolio Management from Q4 2012.\cite{forresterWavePPM}\par 
+To perform our analysis on available market solutions for Project and Portfolio Management tools we will use the Gartner Magic Quadrant for IT Project and Portfolio Management from June 2010 \cite{magicQuadrantPPM}, the last published Magic Quadrant for this type of tools. For complementing our analysis, we will also present the the Forrester Wave Project/Program Portfolio Management from Q4 2012.\cite{forresterWavePPM}\par 
 
 \subsubsection{Gartner Magic Quadrant for IT Project and Portfolio Management (June 2010)}
 
 This Magic Quadrant was the last one published in this area by Gartner, due to the innovations and new requirements for Cloud-based solutions presented in Gartner Magic Quadrant for Cloud-Based IT Project and Portfolio Management Services\cite{magicQuadrantCloud}.
-This quadrant focuses on the PPM market, where Gartner defines the core functionalities each PPM tool supplier must take in account to conform with the market needs. This functionalities are the following:
+Gartner defines a set of main functionalities each PPM solution's provider must implement to fulfill the market's needs. This functionalities are defined in \cite{magicQuadrantPPM}:
 
 \begin{itemize}
 \item \textbf{IT PPM} - Support to Internal IT Project and Portfolio Management.
@@ -395,7 +384,7 @@ This quadrant focuses on the PPM market, where Gartner defines the core function
 \item \textbf{EPPM} - Enterprise PPM.
 \end{itemize}
 
-The Magic Quadrant document\cite{magicQuadrantPPM} also provides some insight on the main challenges and problems the area faces actually and some advices, considerations and definitions for professionals in the area. Considering our purposes, in Figure 10 we have the Magic Quadrant for IT Project and Portfolio Management from June 2010, and in Figure 11 and 12 we have the Ability to execute and Completeness of vision evaluation criteria, respectively, presenting the weightings used on the evaluation of each supplier.\par
+In Figure 10 we have the Magic Quadrant for IT Project and Portfolio Management from June 2010. Ability to execute and completeness of vision evaluation's criteria presenting the weightings used on the evaluation of each supplier can be consulted in \cite{magicQuadrantPPM}.\par
 
 \begin{figure}[h!]
 \centering
@@ -404,90 +393,18 @@ The Magic Quadrant document\cite{magicQuadrantPPM} also provides some insight on
 \end{figure}
 
 
-\begin{figure}[h!]
-\begin{minipage}[h!]{0.45\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/MQPPMToolsAbilityExecute.png}
-\caption{Ability to execute evaluation criteria. Extracted from \cite{magicQuadrantPPM}.} 
-\label{fig:figure1}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[h!]{0.45\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/MQPPMToolsCompletess.png}
-\caption{Completeness of vision evaluation criteria. Extracted from \cite{magicQuadrantPPM}.}
-\label{fig:figure2}
-\end{minipage}
-\end{figure}
-
-
-
-For this magic quadrant, based on our project objectives, we will consider only the quadrant for the leaders taking in account we are looking for the most complete solution on all PPM market areas. For the leaders quadrant, we have product depth in the whole PPM core areas like demand management and analysis, advanced scheduling, resource and cost management and portfolio analysis, establishing a big difference to the challengers quadrant, where only some of them are fully addressed.\par
-Leaders also offer different multiple deployment options, as staged implementations, hosted or SaaS, making its solutions more flexible and applicable to different organization realities. Leaders share many attributes with visionaries or challengers, but they establish differentiation with high ratings in many areas.\par
-The leaders quadrant is composed by Planview with the product Planview Enterprise, Compuware with ChangePoint, CA with CA Clarity EPM, HP with HP PPM Center, Microsoft with EPM and Oracle with Primavera. In \cite{magicQuadrantPPM} we present the main strengths and cautions for each one of this solutions, based on Gartner's analysis.
-
-
-\subsubsection{Gartner MarketScope for IT Project and Portfolio Management Software Applications}
-
-This marketScope includes on-premises and cloud-hosted IT project portfolio management (PPM) providers that offers solutions for deploying its IT PPM applications on-site at the customer's facility (on-premises) or in a SaaS (cloud-hosted). This market is constantly growing and providers are investing more on SaaS solutions.\par
-As explained by Gartner in \cite{MarketScopePPM} \textit{``On-premises and cloud-hosted IT PPM providers offer deployment options, allowing their customers to deploy a dedicated instance of their IT PPM applications on-site at the customer's facility or in the cloud in a hosting environment offered by the provider as a service''}.\par
-For larger organizations, IT PPM solutions are being migrated to SaaS solutions, either for choosing providers presented on this marketScope or by providers presented in the Gartner's ``Magic Quadrant for Cloud- Based Project and Portfolio Management Services."\cite{magicQuadrantCloud}.\par
-In this marketScope we have small, midsize and large providers offering on-premises and/or cloud-hosted PPM applications and they are evaluated considering their ability to support large-enterprise IT departments. Consequently, providers with strong positive and positive ratings are suitable for supporting very large to large deployments and some of the ones rated as strong and promising are more suitable for midsize organizations.\par
-In Table 1 we can see the evaluation criteria for this research, as well as the weights for each criteria. A more detailed evaluation criteria can be consulted in \cite{MarketScopePPM}. In Figure 13 is presented the marketScope for IT Project and Portfolio Management Software Applications. An analysis for each product/service in available in the MarketScope document \cite{MarketScopePPM}.
-Considering the MarketScope results presented, we can see that the solutions considered for analysis in the Gartner Magic Quadrant obtained a positive or strong positive rating in the MarketScope research. We can conclude this providers, despite being leaders in the PPM market, also provide products/services that are flexible and adaptable to emerging markets with constant changes in requirements.
-
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\textbf{Evaluation Criteria} & \textbf{Weighting} \\ \hline
-Customer Experience & High \\ \hline
-Offering (Product) Strategy & Standard \\ \hline
-Product Service & High \\ \hline
-Business Model & High \\ \hline
-Innovation & High \\ \hline
-Market Understanding & High \\ \hline
-Market Responsiveness and Track Record & High \\ \hline
-\end{tabular}
-\vspace{2mm}
-\caption{Gartner MarketScope for IT Project and Portfolio Management Software Applications Evaluation Criteria. Adapted from \cite{MarketScopePPM}.}
-\label{my-label}
-\end{table}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.6\textwidth]{img/MarketScopePPM.png}
-\caption{Gartner MarketScope for IT Project and Portfolio Management Software Applications Results. Extracted from \cite{MarketScopePPM}.}
-\end{figure}
+For this Magic Quadrant, based on our project objectives, we will consider only the quadrant for the Leaders taking in account we are looking for the most complete solution on all PPM market areas. The Leaders' quadrant presents a full coverage of the core areas considered by Gartner the most important in PPM. From the results shown in \cite{magicQuadrantPPM}, we choose this quadrant taking in account that all PPM areas are addressed, while Challengers' quadrant lacks of coverage's depth in some of them.\par
+Leaders also offer flexible deployment solutions, some of them presenting already Cloud-Based solutions. This is specially important when considering the new requirements PPM market is facing over the recent years, in new deployment options to suit clients' needs.\par
+The Leaders quadrant is composed by Planview with the product Planview Enterprise, Compuware with ChangePoint, CA with CA Clarity EPM, HP with HP PPM Center, Microsoft with EPM and Oracle with Primavera. In \cite{magicQuadrantPPM} is presented the main strengths and cautions for each one of this solutions, based on Gartner's analysis.\par
 
 
 \subsubsection{The Forrester Wave: Project/Program Portfolio Management, Q4 2012}
 
-As stated by Forrester \cite{forresterWavePPM}, \textit{``Agile development disrupts operations and governance processes such as project/program portfolio management (PPM). That disruption drives a bifurcation in the tools market \- Traditional PPM doesn't suit the lighter-weight/lean governance processes that Agile projects require.''}. Considering this bifurcation, Forrester performed a 68-criteria evaluation of PPM vendors identifying the 10 most significant ones, comparing them  considering market's bifurcation and its constantly change.\par
+As stated by Forrester \cite{forresterWavePPM}, \textit{``Agile development disrupts operations and governance processes such as project/program portfolio management (PPM). That disruption drives a bifurcation in the tools market \- Traditional PPM doesn't suit the lighter-weight/lean governance processes that Agile projects require.''}. Considering this bifurcation in PPM market's needs, Forrester performed a evaluation of PPM vendors, selecting and evaluating the ten most significant ones.\par
 This research was performed considering two Forrester Wave Models. As defined by Forrester in \cite{forresterWavePPM}, \textit{``Above-the-line vendors serve enterprises primarily interested in portfolio planning, with linkage to tactical work planning and execution. Below-the-line vendors support enterprises seeking immediate help with planning, execution, and work management.''}.\par
-The vendors 68-evaluation criteria are grouped in three high-level groups: Current offering (deployment options, global support, and features for top-down portfolio planning or work-driven execution.), Strategy (product strategy, deployment options, support, and pricing) and Market Presence (revenue growth, financial strength, sales and support services, and the ability to support global implementations).\par
-The 10 vendors were selected following the vendor's selection criteria presented in Figure 14. Information about the products offered by this vendors are available in Figure 15.\par
-
-
-\begin{figure}[h!]
-\begin{minipage}[h!]{0.45\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/AboveLineCriteria.png}
-\caption{Vendors selection criteria. Extracted from \cite{forresterWavePPM}.}
-\label{fig:figure1}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[h!]{0.55\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/AboveLineVendors.png}
-\caption{Above the line selected vendors. Extracted from \cite{forresterWavePPM}.}
-\label{fig:figure2}
-\end{minipage}
-\end{figure}
-
-In Figure 16 we can see the Forrester Wave for Above-The-Line Project/Program Portfolio Management and in Figure 17 the detailed scores by high-level criteria. HP, CA Technologies, Planview, and Daptiv are leaders for this market, being followed by Microsoft, Planisware, Rally, AtTask, and Clarizen that offers competitive solutions, with less strategic alignment capabilities than the leaders group. GenSight has good and solid functionalities, some of them exceeding the leaders ones, but takes a much specialized approach for portfolio management, obtaining a very low score on strategy criteria.\par
-Considering the leaders group, HP's strategy for integrated portfolio management and delivery makes it a Leader while CA Technologies offers robust analytics at transactional and strategic levels. Analytics and integration are the best qualities for Planview and Daptiv's functional strength on multiple fronts makes it stand out.\par
+As presented in \cite{forresterWavePPM}, the solutions' providers evaluation criteria is divided in three groups: Current Offering (deployment options, global support, and features for top-down portfolio planning or work-driven execution), Strategy (product strategy, deployment options, support, and pricing) and Market Presence (revenue growth, financial strength, sales and support services, and the ability to support global implementations).\par
+In Figure 11 we can see the Forrester Wave for Above-The-Line Project/Program Portfolio Management and in Figure 12 the detailed scores by high-level criteria. HP, CA Technologies, Planview, and Daptiv are Leaders for this market, being followed by Microsoft, Planisware, Rally, AtTask, and Clarizen that offers competitive solutions, with less strategic alignment capabilities than the Leaders group.
+Considering the Leaders group and the results presented, HP is clearly the strongest solution in terms of strategy criteria. Planview has its strength in current offering criteria while Daptiv is, from the Leaders quadrant, the one that presents the worst results. CA Technologies is a very complete provider in all criteria, being the most balanced.\par
 
 
 \begin{figure}[h!]
@@ -506,20 +423,15 @@ Considering the leaders group, HP's strategy for integrated portfolio management
 \end{minipage}
 \end{figure}
 
-
-
-In Figure 18 we can see the Forrester Wave for Below-The-Line Project/Program Portfolio Management and in Figure 19 the detailed scores by high-level criteria. HP, Planview, and CA Technologies are clearly the big leaders, proving good features on Agile planning, resource management and reporting support. Microsoft, Rally, and Daptiv are also leaders, but with lower scores on current offering and strategy criteria groups. AtTask, Clarizen, and Planisware offer competitive solutions facing leaders solutions, but are designed for different types of work environments. GenSight solution is too much strategic planning oriented, making it only a contender for leaders and strong performers\par
-Considering the leaders group, HP Project Management provides the best solution in terms of managing various types of projects from traditional to Agile. Planview places its emphasis on pipeline management, resource planning, and reporting. CA Clarity PPM provides the most comprehensive planning solutions for project and work management while Microsoft EPM is the best project-planning tool at the desktop level. Rally has an outstanding performance as agile project management tool. Daptiv provides interesting functionalities on project and work management.\par
-
-\begin{figure}[th!]
-\begin{minipage}[th!]{0.40\linewidth}
+\begin{figure}[h!]
+\begin{minipage}[h!]{0.40\linewidth}
 \centering
 \includegraphics[width=\textwidth]{img/BelowLineWave.png}
 \caption{Forrester Wave for Below-The-Line Project/Program Portfolio Management. Extracted from \cite{forresterWavePPM}.}
 \label{fig:figure1}
 \end{minipage}
 \hspace{0.5cm}
-\begin{minipage}[th!]{0.60\linewidth}
+\begin{minipage}[h!]{0.60\linewidth}
 \centering
 \includegraphics[width=\textwidth]{img/BelowLineScores.png}
 \caption{Forrester Wave for Below-The-Line Project/Program Portfolio Management detailed scores by high-level criteria. Extracted from \cite{forresterWavePPM}.}
@@ -527,15 +439,20 @@ Considering the leaders group, HP Project Management provides the best solution 
 \end{minipage}
 \end{figure}
 
+In Figure 13 we can see the Forrester Wave for Below-The-Line Project/Program Portfolio Management and in Figure 14 the detailed scores by high-level criteria. HP, Planview, and CA Technologies are clearly the big Leaders, proving good features on all criteria. Microsoft, Rally, and Daptiv are also Leaders, but with lower scores on current offering and strategy criteria groups. AtTask, Clarizen, and Planisware offer competitive solutions facing Leaders solutions, but are designed for different types of work environments.\par
+Considering the Leaders group, CA Technologies is the most balanced solution, presenting good results in all criteria. HP stands out for the strategy criteria while the other Leaders solutions have lower score in all criteria, even though they constitute good alternatives to the other Leaders.\par
+
+
+
 \subsection{IT Service Support Management Tools analysis}
 
 To assess the available market solutions for IT Service Support Management tools we will use the Gartner Magic Quadrant for IT Service Support Management Tools from August 2014\cite{magicQuadrantITSM}. Also from Gartner, we will analyze the Critical Capabilities for IT Service Support Management Tools from August 2014\cite{criticalCapabilitiesITSM}. To provide a more wider and heterogeneous view for this type of tools, we will consider the Forrester Wave: ITSM SaaS Delivery Capabilities, Q3 2014\cite{forresterWaveITSM}\par 
 
 \subsubsection{Magic Quadrant for IT Service Support Management Tools}
 
-This Magic Quadrant provides a precious support on ITSM tools analysis for professionals in IT Service Management. ITSSM tools help on management processes of IT services delivered by the organization, automatizing the tasks and workflows for quality IT services delivery to the business.\par
+This Magic Quadrant provides a precious support on ITSM tools' analysis for professionals in IT Service Management. ITSM tools helps on management processes of IT services delivered by the organization, automating the tasks and workflows for quality IT services delivery to the business.\par
 As stated by Gartner in \cite{magicQuadrantITSM}, \textit{``the market for ITSSM tools is segmented according to the vendors' abilities to provide strong ITSSM capabilities and high levels of ease of integration with broader IT operations management functionalities.''}. Therefore, we can have basic, intermediate and advance vendors considering its ability to integrate with third-party IT Operations Management solutions and the set of ITSM functionalities. Each organization should analyze its own Infrastructure and Operations (I\&O) maturity level and choose an adequate solution. Basic or intermediate vendors are suitable for low maturity I\&O organizations while advance vendors are better option for the high maturity ones.\par
-In Figure 20 we have the Magic Quadrant for IT Service Support Management Tools from August 2014, and in Figure 21 and 22 we have the Ability to execute and Completeness of vision evaluation criteria, respectively, presenting the weightings used on the evaluation of each supplier.\par
+In Figure 15 we have the Magic Quadrant for IT Service Support Management Tools from August 2014. Ability to execute and completeness of vision evaluation's criteria presenting the weightings used on the evaluation of each supplier can be consulted in \cite{magicQuadrantITSM}.\par
 
 \begin{figure}[h!]
 \centering
@@ -543,30 +460,14 @@ In Figure 20 we have the Magic Quadrant for IT Service Support Management Tools 
 \caption{Gartner Magic Quadrant for IT Service Support Management Tools (August 2014). Extracted from \cite{magicQuadrantITSM}.}
 \end{figure}
 
-\begin{figure}[h!]
-\begin{minipage}[h]{0.45\linewidth}
-\centering
-\includegraphics[width=0.8\textwidth]{img/AbilityToExecuteITSM.png}
-\caption{Ability to execute evaluation criteria. Extracted from \cite{magicQuadrantITSM}.}
-\label{fig:figure1}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[h!]{0.45\linewidth}
-\centering
-\includegraphics[width=0.8\textwidth]{img/CompletenessOfVisionITSM.png}
-\caption{Completeness of vision evaluation criteria. Extracted from \cite{magicQuadrantITSM}.}
-\label{fig:figure2}
-\end{minipage}
-\end{figure}
 
-
-For this magic quadrant, and considering our project objectives, we will consider only the Leaders and Challengers quadrants, taking in account we are interested in a complete ITSM solution suited for different levels of maturity on I\&O management. For the leaders quadrant, composed by BMC and ServiceNow, we have good market shares (29\% and 21\% respectively) and the desired levels of marketing and sales capabilities for market acceptance.\par 
-In the challengers quadrant, CA Technologies and Cherwell Software have growing shares of the market and present good improvements for products providing ITSM solutions. They offer its competitive products with good viability levels for the market.\par
-Considering the results presented in this magic quadrant, we will consider the following solutions: ServiceNow IT Service Automation Suite from ServiceNow, BMC Remedy ITSM Suite, BMC FootPrints Service Core and BMC Remedyforce from BMC Software, Cherwell Service Management from Cherwell Software and CA Service Management and CA Cloud Service Management from CA Technologies.\par
+For this Magic Quadrant, and considering our project objectives, we will consider only the Leaders' and Challengers' quadrants, taking in account we are interested in a complete ITSM solution suited for different levels of maturity on I\&O management. For the Leaders quadrant, composed by BMC and ServiceNow, we have providers more complete in terms of market's needs understanding, providing solutions that are better aligned with the Gartner's vision of the market.\par 
+In the challengers quadrant, CA Technologies and Cherwell Software offer competitive solutions in terms of ability to execute criteria. Aspects as Customer Experience or Pricing are well covered by these providers.\par
+Considering the results presented in this Magic Quadrant, we will consider the following solutions: ServiceNow IT Service Automation Suite from ServiceNow, BMC Remedy ITSM Suite, BMC FootPrints Service Core and BMC Remedyforce from BMC Software, Cherwell Service Management from Cherwell Software and CA Service Management and CA Cloud Service Management from CA Technologies.\par
 
 \subsubsection{Gartner Critical Capabilities for IT Service Support Management Tools}
 
-For complementing the vendors analysis performed by the Gartner Magic Quadrant for IT Service Support Management Tools, we will also consider the Gartner's Critical Capabilities for IT Service Support Management Tools from August 2014\cite{criticalCapabilitiesITSM}, providing an evaluation of ITSSM tools' critical capabilities in five use cases.\par
+For complementing the vendors' analysis performed by the Gartner Magic Quadrant for ITSM Tools, we will also consider the Gartner's Critical Capabilities for IT Service Support Management Tools from August 2014\cite{criticalCapabilitiesITSM}, providing an evaluation of ITSSM tools' critical capabilities in five use cases.\par
 As defined by Gartner in \cite{criticalCapabilitiesITSM}, the use cases evaluated are:
 
 \begin{itemize}
@@ -591,76 +492,21 @@ For product capabilities ratings, Gartner uses the following capabilities:
 \item Product Setup and Complexity
 \end{itemize}
 
-From Figure 23 to Figure 27 we have the products or services score for each use case considered. As we can see, for Low to Medium Maturity use case, Cherwell and EasyVista solutions are the one that have the higher score, presenting good incident and problem management capabilities, high ease-of-use levels, and out-of-the-box best-practice capabilities. For the all other use cases, ServiceNow and BMC solutions lead the market, providing good scores for all the desired capabilities on an ITSM tool.\par
-More detailed information on each product or service performance on this evaluation can be consulted in \cite{GartnerCriticalCapabilities}.
-
-
-\begin{figure}[!h]
-\begin{minipage}[!htb]{0.42\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/LowMediumScores.png}
-\caption{Vendors' Product Scores for the Low to Medium-Maturity Use Case. Extracted from \cite{criticalCapabilitiesITSM}.}
-\label{fig:figure1}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[!h]{0.42\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/MediumHighScores.png}
-\caption{Vendors' Product Scores for the Medium to High-Maturity Use Case. Extracted from \cite{criticalCapabilitiesITSM}.}
-\label{fig:figure2}
-\end{minipage}
-\end{figure}
-
-\begin{figure}[!h]
-\begin{minipage}[h]{0.42\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/HighScores.png}
-\caption{Vendors' Product Scores for the High-Maturity Use Case. Extracted from \cite{criticalCapabilitiesITSM}.}
-\label{fig:figure1}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[!h]{0.42\linewidth}
-\centering
-\includegraphics[width=\textwidth]{img/DigitalWorkplaceScores.png}
-\caption{Vendors' Product Scores for the Digital Workplace Use Case. Extracted from \cite{criticalCapabilitiesITSM}.}
-\label{fig:figure2}
-\end{minipage}
-\end{figure}
-
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.40\textwidth]{img/TotalITSMScores.png}
-\caption{Vendors' Product Scores for the Total ITSSM Use Case. Extracted from \cite{criticalCapabilitiesITSM}.}
-\end{figure}
+In \cite{criticalCapabilitiesITSM} it is provided the products' or services' scores for each use case considered. For Low to Medium Maturity use case, Cherwell and EasyVista solutions are the ones that have the higher score, presenting good incident and problem management capabilities, high ease-of-use levels, and out-of-the-box best-practice capabilities. For the all other use cases, ServiceNow and BMC solutions lead the market, providing good scores for all the desired capabilities on an ITSM tools.\par
 
 
 \subsubsection{Forrester Wave: ITSM SaaS Delivery Capabilities for Q3 2014}
 
-As stated by Forrester in \cite{forresterWaveITSM}, \textit{``How an IT or business service is delivered directly affects the quality of experience for the service consumer and the reputation of the infrastructure and operations (I\&O) team that delivers the services.''}. The need for Saas ITSM vendors' solutions evaluation lead to this 30-criteria Forrester evaluation of the top 10 most significant vendors in ITSM market.\par
+As stated by Forrester in \cite{forresterWaveITSM}, \textit{``How an IT or business service is delivered directly affects the quality of experience for the service consumer and the reputation of the infrastructure and operations (I\&O) team that delivers the services.''}. The need for ITSM vendors' solutions evaluation lead to this Forrester evaluation of the top ten most significant vendors in ITSM market.\par
 
-The vendors 30-evaluation criteria are grouped in three high-level groups: Current offering (client feedback, scope of predefined service, breadth of offering, availability and resiliency, security and compliance, upgradability and services activation time), Strategy (customer experience, digital disruption, big data and mobile mind shift) and Market Presence (number of enterprise customers, corporate profitability and ITSM SaaS growth).\par
-Considering the features and functionality assessment of ITSM SaaS Vendors, the main core areas are: enabling of the most commonly adopted ITSM capabilities (incident, service request, problem, change, knowledge, service-level, and configuration management), the configuration management database (CMDB) or better service information system (SIS), a service portal (or exchange) with self-service capabilities and enabling of social, mobility, and automation capabilities.\par
-For this evaluation were considered 10 vendors, selected following the vendor selection criteria presented in Figure 28. Information about the products offered by this vendors are available in Figure 29.\par
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.7\textwidth]{img/VendorSelectionCriteriaITSM.png}
-\caption{Vendors selection criteria. Extracted from \cite{forresterWaveITSM}.}
-\end{figure}
+The solutions' providers evaluation criteria is divided in three groups: Current offering (client feedback, scope of predefined service, breadth of offering, availability and resiliency, security and compliance, updatability and services activation time), Strategy (customer experience, digital disruption, big data and mobile mind shift) and Market Presence (number of enterprise customers, corporate profitability and ITSM SaaS growth).\par
+Considering the features and functionality assessment of ITSM's vendors, the main core areas are: enabling of the most commonly adopted ITSM capabilities (incident, service request, problem, change, knowledge, service-level, and configuration management), the configuration management database (CMDB) or better service information system (SIS), a service portal (or exchange) with self-service capabilities and enabling of social, mobility, and automation capabilities.\par
+In Figure 16 we can see the Forrester Wave: ITSM SaaS Delivery Capabilities for Q3 2014 and in Figure 17 the detailed scores by high-level criteria. SysAid Technologies, Cherwell Software and ServiceNow are Leaders for this market while all the other vendors follow them, being rated as Strong Performers. The Leaders show high ITSM SaaS delivery capabilities and stand apart in customer's feedback. While the Strong Performers vendors present good results for some criteria, they lack on other ones, making them a less complete solution for the ITSM Market\par
+All the Leaders' solutions are aimed for all markets, making the difference stand only on specific features or details of each solution. Customers should conduct a detailed analysis to the detailed scores in Figure 17 to conclude what is the best solution for a given criteria type.\par
 
 
 \begin{figure}[h!]
-\centering
-\includegraphics[width=0.7\textwidth]{img/ITSMVendorsInfo.png}
-\caption{Top 10 selected vendors. Extracted from \cite{forresterWaveITSM}.}
-\end{figure}
-
-In Figure 30 we can see the Forrester Wave: ITSM SaaS Delivery Capabilities for Q3 2014 and in Figure 31 the detailed scores by high-level criteria. SysAid Technologies, Cherwell Software and ServiceNow are leaders for this market while all the other vendors follows them, being rated as strong performers. The leaders show high ITSM SaaS delivery capabilities and stand apart in customer feedback. While the strong performers vendors present good results for some criteria, they lack on other ones, making them a less complete solution for the ITSM Market\par
-All the leaders supply solutions are aimed for all markets, making the difference stand only on specific features or details of each solution. Customers should conduct a detailed analysis to the detailed scores in Figure 30 to conclude what is the best solution for a given criteria type.\par
-
-
-\begin{figure}[h]
 \begin{minipage}[h]{0.40\linewidth}
 \centering
 \includegraphics[width=\textwidth]{img/ForresterWaveITSM.png}

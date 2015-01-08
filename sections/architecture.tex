@@ -32,7 +32,7 @@ We are considering the use of BPMN 2.0 (Business Process Model and Notation) for
 \subsubsection{Processes definition}
 
 Using an interview approach with the organization's stakeholders for a more deeper analysis on the problem scope, we defined the areas of interest we need to cover. This areas can change during project execution phases, since requirements are volatile and can be changed. Also, more areas can be covered in the future, if we consider it brings an added value for this architecture.\par
-In Figure 32 we can observe the processes of interest for this project highlighted from the ISO/IEC 12207 international standard. As explained before, processes directly related to governance areas are not considered for this project due to its increased complexity. As consequence, Agreement processes and Organizational Project-Enabling processes are outside the scope for this project.\par
+In Figure 18 we can observe the processes of interest for this project highlighted from the ISO/IEC 12207 international standard. As explained before, processes directly related to governance areas are not considered for this project due to its increased complexity. As consequence, Agreement processes and Organizational Project-Enabling processes are outside the scope for this project.\par
 Technical Processes and Software Implementation processes are also not considered in the scope, based on the requirements presented by the stakeholders and the organization scenario provided. As stated in section 7.1, we will assume these processes will be either outsourced, or managed by the organization according to already defined processes for that purpose.\par
 Software Reuse Processes are also outside the scope of this project. It is a shared opinion of stakeholders that this processes are not related to this project's problem and would only increase its complexity without adding any value.\par
 The processes we will address in detail are the Project processes and the Software Support processes, directly related to project and maintenance management. It constitutes the core of this project and is fundamental for establishing the proposed processes architecture.\par
@@ -127,32 +127,31 @@ In this section we will present the solutions we consider the best for our objec
 
 \subsubsection{PPM Tools}
 
-For PPM solutions, that we evaluate in section 6.3, we used the Magic Quadrant, the MarketScope and the Forrester Wave methodologies for evaluation.\par
+For PPM solutions, that we evaluate in section 6.2, we used the Gartner Magic Quadrant and the Forrester Wave methodologies for evaluation.\par
 In Magic Quadrant results, that performs an evaluation of the PPM solutions' providers adequacy to the market, we will just consider the leaders quadrant, composed by Planview, Compuware, CA, HP, Oracle and Microsoft. Planview and CA are the suppliers with the best results but are closely followed by the rest. A deeper analysis on strengths and cautions presented by Gartner for each one of this solutions is presented in \cite{magicQuadrantPPM}.\par
-In MarketScope results, that presents how solutions are prepared to deal with markets that constantly change in terms of new requirements, we will only consider the solutions with strong positive and positive ratings. This method is particular important in this area, because PPM solutions are facing market changes, looking more for Cloud based solutions in the future. As well as on magic Quadrant, Planview and CA Techncologies present the best results with strong positive ratings. The other solutions we are considering obtained positive rating.\par
-For the Forrester Wave results, that evaluates providers by criteria and respective weightings, we will consider the two models explained in section 6.3, the above-the-line and below-the-line. For the first one, the leaders quadrant is composed by Planview, CA Technologies, HP and Daptiv. All presents good results but is CA Technologies who is the most complete provider, in terms of current offering, strategy and market presence. Other providers present better results in some of this criteria but are substantially worse in others. For the below-the-line evaluation, we have CA Technologies and Planview very close to each other and HP with an excellent result in strategy criteria. Microsoft, Rally and Daptiv are also part of the leaders, but with results slightly worse.\par
-In Table 3 we can observe the PPM Tools Evaluation results. In green we have the solutions we consider the best for this project taking in account the evaluation results. We also present the alternatives in orange. CA Technologies with CA Clarity PPM and Planview with Planview Enterprise are the solutions we will purpose for the PPM Tool to consider for this project.
+For the Forrester Wave results, that evaluates providers by criteria and respective weightings, we will consider the two models explained in section 6.2.2, the above-the-line and below-the-line. For the first one, the leaders quadrant is composed by Planview, CA Technologies, HP and Daptiv. All presents good results but is CA Technologies who is the most complete provider, in terms of current offering, strategy and market presence. Other providers present better results in some of this criteria but are substantially worse in others. For the below-the-line evaluation, we have CA Technologies and Planview very close to each other and HP with an excellent result in strategy criteria. Microsoft, Rally and Daptiv are also part of the leaders, but with results slightly worse.\par
+In Table 3 we can observe the PPM Tools Evaluation results. In green we have the solutions we consider the best for this project taking in account the evaluation results. We also present the alternatives in orange. CA Technologies with CA Clarity PPM, Planview with Planview Enterprise and HP with HP PPM Center are the solutions we will purpose for the PPM Tool to consider for this project.
 
 
 \begin{table}[h!]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|l|c|c|c|l|}
+\begin{tabular}{|c|c|l|c|c|l|}
 \hline
- & \multicolumn{2}{c|}{} &  & \multicolumn{3}{c|}{\textbf{Forrester Wave}} \\ \cline{5-7} 
-\multirow{-2}{*}{\textbf{Solutions Providers}} & \multicolumn{2}{c|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Gartner\\ Magic\\ Quadrant\end{tabular}}}} & \multirow{-2}{*}{\textbf{Marketscope}} & \multicolumn{1}{l|}{\textbf{Above-The-Line}} & \multicolumn{2}{l|}{\textbf{Below-The-Line}} \\ \hline
+ & \multicolumn{2}{c|}{} & \multicolumn{3}{c|}{\textbf{Forrester Wave}} \\ \cline{4-6} 
+\multirow{-2}{*}{\textbf{Solutions Providers}} & \multicolumn{2}{c|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Gartner Magic\\ Quadrant\end{tabular}}}} & \multicolumn{1}{l|}{\textbf{Above-The-Line}} & \multicolumn{2}{l|}{\textbf{Below-The-Line}} \\ \hline
 \rowcolor[HTML]{5A9D58} 
-\textbf{CA Technologies} & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} & Strong Positive & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} \\ \hline
+\textbf{CA Technologies} & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} \\ \hline
 \rowcolor[HTML]{5A9D58} 
-\textbf{Planview} & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} & Strong Positive & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} \\ \hline
+\textbf{Planview} & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} \\ \hline
+\rowcolor[HTML]{5A9D58} 
+\textbf{HP} & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{5A9D58}Leader} \\ \hline
 \rowcolor[HTML]{FFCB2F} 
-\textbf{HP} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} & Positive & Leader & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} \\ \hline
-\rowcolor[HTML]{FFCB2F} 
-\textbf{Microsoft} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} & Positive & Strong Performer & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} \\ \hline
-\textbf{Oracle} & \multicolumn{2}{c|}{Leader} & Positive & - & \multicolumn{2}{c|}{-} \\ \hline
-\textbf{Compuware} & \multicolumn{2}{c|}{Leader} & Positive & - & \multicolumn{2}{c|}{-} \\ \hline
-\textbf{Rally} & \multicolumn{2}{c|}{-} & - & Strong Performer & \multicolumn{2}{c|}{Leader} \\ \hline
-\textbf{Daptiv} & \multicolumn{2}{c|}{-} & - & Leader & \multicolumn{2}{c|}{Leader} \\ \hline
+\textbf{Microsoft} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} & Strong Performer & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Leader} \\ \hline
+\textbf{Oracle} & \multicolumn{2}{c|}{Leader} & - & \multicolumn{2}{c|}{-} \\ \hline
+\textbf{Compuware} & \multicolumn{2}{c|}{Leader} & - & \multicolumn{2}{c|}{-} \\ \hline
+\textbf{Rally} & \multicolumn{2}{c|}{-} & Strong Performer & \multicolumn{2}{c|}{Leader} \\ \hline
+\textbf{Daptiv} & \multicolumn{2}{c|}{-} & Leader & \multicolumn{2}{c|}{Leader} \\ \hline
 \end{tabular}
 }
 \vspace{2mm}
@@ -160,9 +159,11 @@ In Table 3 we can observe the PPM Tools Evaluation results. In green we have the
 \label{my-label}
 \end{table}
 
+\vspace{10mm}
+
 \subsubsection{ITSM Tools}
 
-For ITSM solutions, that we evaluated in section 6.4, we used the Magic Quadrant , the Critical Capabilities and the Forrester Wave methodologies for evaluation.\par
+For ITSM solutions, that we evaluated in section 6.3, we used the Magic Quadrant , the Critical Capabilities and the Forrester Wave methodologies for evaluation.\par
 In Magic Quadrant results we will just consider the leaders and challengers quadrants, composed by ServiceNow and BMC Software for the leaders and Cherwell and CA Technologies for challengers. ServiceNow is the best provider in terms of ability to execute with some advantage to concurrency but really close of BMC Software in terms of completeness of vision. Cherwell Software and CA Technologies present a considering lower result for completeness of vision considering the leaders quadrant. A deeper analysis on strengths and cautions presented by Gartner for each one of this solutions is presented in \cite{magicQuadrantITSM}.\par
 In Critical Capabilities results, we will only consider the High-Maturity, Digital Workplace and Total ITSM Use Cases, the ones that are more adequate to our objectives and to the organization's scenario. We will also only consider the solutions provided by the suppliers in the leaders and challengers quadrants presented by Gartner. In all the use cases considered, BMC Remedy ITSM Suite and ServiceNow IT Service Automation suite have the higher scores, being followed by some distance by CA Service Management and Cherwell Software Service Management.\par
 For the Forrester Wave results, we have Cherwell Software and Service Now as the leaders, very close to each other and with a very good result in terms of market presence. BMC Software and CA Technologies are considered Strong Performers, but at some distance of the other two. Forrester establishes big differences between the two leaders providers and the two strong contenders in terms of the three criteria considered.\par
@@ -190,10 +191,4 @@ In Table 4 we can observe the ITSM Tools Evaluation results. In green we have th
 \caption{ITSM Tools evaluation results.}
 \label{my-label}
 \end{table}
-
-\vspace{100mm}
-
-
-
-
 
